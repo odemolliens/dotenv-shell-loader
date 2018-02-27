@@ -11,10 +11,10 @@ dotenv-shell-loader is a simple shell script that defines a function (`dotenv`) 
    $ # You probably want to load the script at shell startup
    ```
 
-2. Execute `dotenv` in a directory which contains `.env` file to load environment variables.
+2. Execute `dotenv` in a directory and add a the name of the file
    ```bash
    $ cd /path/to/somewhere
-   $ dotenv
+   $ dotenv .env
    ```
 
 ## License

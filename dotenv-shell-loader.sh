@@ -9,7 +9,7 @@
 dotenv () {
   DOTENV_SHELL_LOADER_SAVED_OPTS=$(set +o)
   set -o allexport
-  [ -f .env ] && source .env
+  [ -f $1 ] && source $1
   set +o allexport
   eval "$DOTENV_SHELL_LOADER_SAVED_OPTS"
   unset DOTENV_SHELL_LOADER_SAVED_OPTS
